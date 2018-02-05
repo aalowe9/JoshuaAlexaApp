@@ -43,3 +43,26 @@ Deploy function to AWS Lambda
     cd "JoshuaAlexaApp/src/JoshuaAlexaApp"
     dotnet lambda deploy-function
 ```
+ {
+  "intents": [
+    { "intent": "AddDate",
+    "slots": [
+        {
+          "name": "activity",
+          "type": "AMAZON.LITERAL"
+        }
+    ]
+    },
+    { "intent": "AMAZON.HelpIntent" },
+    { "intent": "AMAZON.StopIntent" },
+    { "intent": "AMAZON.CancelIntent" }
+  ]
+}
+
+AMAZON.StopIntent we're done
+AMAZON.StopIntent that is enough
+AMAZON.StopIntent close
+AMAZON.StopIntent stop
+
+AddDate {he's rolled over|activity'}
+
